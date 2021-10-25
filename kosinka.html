@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+<title>Magazine</title>
+<link rel="stylesheet" href="mysite.css">
+<script src="jquery.js"></script>
+<div class="head"><b><p id="zaglav1">Магазин одежды и мягких игрушек</p><p id="zaglav2"><i>мы делаем мягкие игрушки и одежду под заказ</i></p></b></div>
+<ul id="cssmenu">
+        <li><a href="kontakti.html">контакты</a></li>
+        <li><a href="zakaz.html">под заказ</a>
+                <ul>
+                        <li><a href="#">закажите одежду</a></li>
+                        <li><a href="#">закажите игрушки</a></li>
+                </ul>
+        </li>
+        <li><a href="tovar.html">наш товар</a>
+                <ul>
+                        <li><a href="halati.html">халаты</a></li>
+                        <li><a href="#">игрушки</a></li>
+						<li><a href="fartuhi.html">фартухи</a></li>
+						<li><a href="shapki.html">шапки</a></li>
+						<li><a href="#">штаны</a></li>
+                </ul>
+        </li>
+		<li><a href="index.html">главная страница</a></li>
+</ul>
+</head>
+<body>
+<div class="sloy1">
+<div class="leftsloy1">
+<ul>
+Одежда<ul>
+<a href="halati.html"><li>Халаты</li></a>
+<a href="fartuhi.html"><li>Фартухи</li></a>
+<a href="shapki.html"><li>Шапки</li></a>
+</ul>
+Игрушки<ul>
+<a href="popiki.html"><li>Попики</li></a>
+<a href="halati"><li>Зайцы</li></a>
+<a href="halati"><li>Другие</li></a>
+</ul>
+</ul>
+</div>
+<div class="rightsloy1">
+<center><h2>Игра - "Косынка"</h2><p><h3></h3></p>
+
+	<form method="get">
+		<input type="button" id="buttonStart" value="Start" onclick="showKosinkaGame();" class="buttonKosinka"/>
+		<input type="button" id="buttonClose" value="Close" onclick="closeKosinkaGame();" class="buttonKosinka"/>
+	</form>
+
+	<div id="kosObol">
+		<div id="topLine">
+			<div id="koloda" onclick="vyborkaFromOpenKard();">Колода</div>
+			<div id="openKart" onclick="clickOnVyborkaBeforeMove();"></div>
+			<div class="endCard" id="10" onclick="addToEndCard(this);"></div>
+			<div class="endCard" id="9" onclick="addToEndCard(this);"></div>
+			<div class="endCard" id="8" onclick="addToEndCard(this);"></div>
+			<div class="endCard" id="7" onclick="addToEndCard(this);"></div>
+		</div>
+		<div id="bottomLine">
+			<div class="checkedCard" id="0" onclick="clickOnCheckCard(this);"></div>
+			<div class="checkedCard" id="1" onclick="clickOnCheckCard(this);"></div>
+			<div class="checkedCard" id="2" onclick="clickOnCheckCard(this);"></div>
+			<div class="checkedCard" id="3" onclick="clickOnCheckCard(this);"></div>
+			<div class="checkedCard" id="4" onclick="clickOnCheckCard(this);"></div>
+			<div class="checkedCard" id="5" onclick="clickOnCheckCard(this);"></div>
+			<div class="checkedCard" id="6" onclick="clickOnCheckCard(this);"></div>
+		</div>
+			
+	</div>
+	
+	<p id="lookVyborka"></p>
+	
+
+</div>
+</div>
+</body>
+<script src="kosinka.js"></script>
+</html>

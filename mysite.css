@@ -1,0 +1,394 @@
+﻿.head {
+width: 100%;
+height: 16%;
+background: white;
+background-size: 100% 100%;
+text-align: center;
+margin: 0;
+padding: 0.5%;
+}
+p#zaglav1 {
+font: bold 200%/100% cursive;
+margin: 1%;
+}
+p#zaglav2 {
+font: bold 130%/0% cursive;
+}
+.sloy1 {
+width: 100%;
+height: 75%;
+background: white;
+float: left;
+margin: 1px;
+box-sizing: border-box;
+}
+.leftsloy1 {
+width: 20%;
+height: 100%;
+background: linear-gradient(black, #003366, white);
+border-radius: 10px;
+float: left;
+margin: 0;
+padding: 0;
+color: white;
+font: bold 100%/200% Verdana, Arial;
+box-sizing: border-box;
+}
+.leftsloy1 a {
+font: 120%/150% fixed, monospace;
+}
+.rightsloy1 {
+width: 79%;
+height: 100%;
+background: linear-gradient( gray, white);
+border-radius: 10px;
+margin: 0;
+padding: 0;
+float: right;
+overflow-y: auto;
+overflow-x: hidden;
+}
+p#glav1 {
+margin: 2%;
+text-align: center;
+font: bold 130%/100% Verdana, Arial;
+}
+p#glav2 {
+margin: 3%;
+text-align: left;
+font: italic 105%/120% Verdana, Arial;
+}
+.tab1 {
+width: 95%;
+height: 95%;
+margin: 3%;
+text-align: center;
+color: black;
+box-sizing: border-box;
+display: block;
+}
+.image {
+width: 95%;
+height: 90%;
+display: block;
+text-align: center;
+border-radius: 10px;
+box-sizing: border-box;
+vertical-align: top;
+}
+.tovarLine {
+width: 100%;
+height: 70%;
+margin: 1%;
+text-align: center;
+float: left;
+}
+.tovarImg {
+height: 100%;
+width: 22%;
+float: left;
+text-align: center;
+margin-left: 2%;
+margin-top: 2%;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+a:hover {
+text-decoration: underline;
+color: gray;
+}
+a:after {
+color: white;
+text-decoration: none;
+}
+/*главная полоса для меню*/
+ul#cssmenu {
+        width: 100%;
+        margin: 2px;
+        border: 0 none;
+        padding: 0;
+        list-style: none;
+        background: white;
+        height: 5%;
+        font: bold 12px/28px Verdana, Arial;
+		float: right;
+
+}
+/*размеры каждого раздела главного меню*/
+ul#cssmenu li {
+        margin: 0;
+        border: 0;
+		border-radius: 10px;
+        padding: 0;
+        float: right;
+        display: inline;
+        list-style: none;
+        position: relative;
+        height: 100%;
+		width: 19.7%;
+		text-align: center;
+}
+/*размеры подменю*/
+ul#cssmenu ul {
+        margin: 0;
+        border: 0 none;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+}
+ul#cssmenu ul:after {
+        clear: both;
+        display: block;
+        font: 1px/0px serif;
+        content: ".";
+        height: 0;
+        visibility: hidden;
+}
+ul#cssmenu ul li {
+        width: 100%;
+        float: left;
+        display: block !important;
+        display: inline;
+}
+/* характеристики ссылок */
+ul#cssmenu a {
+        border: 1px solid black;
+		border-radius: 10px;
+        padding: 0;
+        float: none !important;
+        float: left;
+        display: block;
+        background: linear-gradient(black, #003366);
+        color: white;
+        font: bold 120%/28px Verdana, Arial;
+        text-decoration: none;
+        height: 100%;
+}
+/* действия ссылок главного меню при наведении */
+ul#cssmenu a:hover,
+ul#cssmenu li:hover a,
+ul#cssmenu li.iehover a {
+        background: linear-gradient(black,#003366, gray);
+        color: white;
+        border-top: black 0px solid;
+		}
+/* характеристики ссылок подменю при наведении на главное меню */
+ul#cssmenu li:hover li a,
+ul#cssmenu li.iehover li a {
+        border: 1px solid white;
+        float: none;
+        background: linear-gradient(black, #003366);
+        color: #FFFFFF;
+}
+/* характеристики ссылок подменю при наведении */
+ul#cssmenu li:hover li a:hover,
+ul#cssmenu li:hover li:hover a,
+ul#cssmenu li.iehover li a:hover,
+ul#cssmenu li.iehover li.iehover a {
+        background: linear-gradient(black,#003366, gray);
+        color: white;
+}
+ul#cssmenu ul ul {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 170px;
+}
+ul#cssmenu li:hover ul ul,
+ul#cssmenu li.iehover ul ul {
+        display: none;
+}
+ul#cssmenu li:hover ul,
+ul#cssmenu ul li:hover ul,
+ul#cssmenu li.iehover ul,
+ul#cssmenu ul li.iehover ul {
+        display: block;
+}
+#test {
+width: 100px;
+height: 100px;
+border: 2px solid black;
+padding: 0px;
+margin: 1%;
+background: url("head.jpg");
+background-size: 100% 100%;
+position: static;
+float: left;
+}
+.button {
+float: right;
+margin: 1%;
+}
+.textWright {
+color: black;
+float: none;
+text-align: center;
+}
+.bHar {
+color: red;
+}
+.divForImage {
+width: 80%;
+border: 0px solid black;
+height: 25%;
+margin: 1%;
+}
+.testDivImg {
+height: 80%;
+width: 30%;
+border: 2px solid black;
+float: none;
+margin: 1%;
+}
+#rightSloyTest {
+width: 79%;
+height: 100%;
+background: linear-gradient( gray, white);
+border-radius: 10px;
+margin: 0;
+padding: 0;
+float: right;
+overflow: auto;
+}
+.userInfBox {
+width: 40%;
+margin-left: 2%;
+margin-top: 2%;
+border: 1px solid black;
+}
+#formButton {
+margin: 2%;
+}
+#userInfDiv {
+width: 95%;
+height: 50%;
+margin: 2%;
+}
+.anketDiv {
+width: 49%;
+height: 100%;
+border: 1px solid black;
+float: left;
+background: white;
+}
+.anketTextP {
+margin-left: 2%;
+}
+#clickMove {
+width: 300px;
+height: 300px;
+background: red;
+background: linear-gradient( white 10%, black 10%),
+			linear-gradient( black 10%, white 10%);
+border: 2px solid black;
+}
+
+#kosObol {
+top: 10%;
+width: 60%;
+height: 70%;
+background: green;
+border: 5px solid blue;
+border-radius: 10px;
+}
+#topLine {
+width: 95%;
+height: 22%;
+margin-top: 2%;
+}
+#bottomLine {
+width: 97%;
+height: 70%;
+}
+#koloda {
+width: 8%;
+height: 90%;
+border: 1px solid white;
+float: left;
+background: yellow;
+}
+#openKart {
+width: 8%;
+height: 90%;
+border: 1px solid white;
+float: left;
+margin-left: 2%;
+background: white;
+}
+.checkedCard {
+width: 8%;
+height: 90%;
+border: 1px solid black;
+margin: 3%;
+float: left;
+}
+.endCard {
+	width: 8%;
+	height: 90%;
+	float: right;
+	margin-right: 2%;
+	background: white;
+}
+.buttonKosinka {
+	float: right;
+}
+#buttonStart {
+	width: 100px;
+	height: 100px;
+	border: 0;
+	border-radius: 50%;
+	float: none;
+	background: green;
+	color: yellow;
+	font-size: 150%;
+}
+#buttonClose {
+	width: 100px;
+	height: 50px;
+	border: 2px solid yellow;
+	border-radius: 50%;
+	float: right;
+	background: green;
+	color: yellow;
+}
+#borderForStartButt:hover {
+	background: grey;
+}
+#buttonStart:active {
+	border: 2px solid yellow;
+}
+#borderForStartButt {
+	width: 100px;
+	height: 100px;
+	border: 2px solid yellow;
+	border-radius: 50%;
+	padding: 0;
+	float: none;
+}
+.imageKosinka {
+	width: 100%;
+	height: 5%;
+}
+.lastImageKosinka {
+	width: 100%;
+	height: 30%;
+}
+.imageOpenKard {
+	height: 15%;
+	width: 100%;
+}
+.lastIageOpenKard {
+	width: 100%;
+	height: 70%;
+}
+.endKard {
+	width: 100%;
+	height: 100%;
+}
